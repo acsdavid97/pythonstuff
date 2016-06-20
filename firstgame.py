@@ -2,6 +2,8 @@ from sys import exit
 import mapFirstgame
 
 class engine(object):
+    def __init__(self,gamemap):
+        self.gamemap=gamemap
     def startingScene(self):
         print "this is the starting scene"
         print "are you sure you want to continue?"
@@ -16,9 +18,10 @@ class engine(object):
         print "exiting"
         exit(0)
 
+
   
 
 myEngine = engine()
 myEngine.startingScene()
 myMap = mapFirstgame.gamemap()
-print myMap.currentScene()
+print myMap.currScene
