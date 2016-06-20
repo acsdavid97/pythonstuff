@@ -1,0 +1,2 @@
+import fistfunction
+fistfunction.printsnothing()
