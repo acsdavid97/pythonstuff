@@ -1,7 +1,6 @@
-import mapFirstgame
 import random import randint
 
-class thirdscene(self):
+class thirdscene(gamemap):
     def start(self):
         print "you have to guess a natural number between 0 and 9"
         print "you have 3 chances, the random number won't change"
@@ -13,5 +12,5 @@ class thirdscene(self):
                 return "final"
             else:
                 print "try again"
-        return "death"
+        return "first"
 

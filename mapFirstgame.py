@@ -1,7 +1,11 @@
 class gamemap(object):
     def __init__(self):
-        self.scenes = ["first", "second", "third","final","death"]
-        self.currScene = self.scenes[0]
+        self.first=firstscene()
+        self.currScene = "first"
+    def nextScene(self):
+        self.currScene=self.scenes[self.currScene]
+    
+        
 
 
         

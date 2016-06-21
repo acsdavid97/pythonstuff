@@ -1,5 +1,3 @@
-import mapFirstgame
-
 class firstscene(gamemap):
     def start(self):
         print "this is the start of scene#1"
@@ -7,3 +5,7 @@ class firstscene(gamemap):
         answer = raw_input(">")
         return "second"
 
+if( __name__=='__main__' ):
+    print "first scene test\n"
+    fi = firstscene()
+    fi.start()
