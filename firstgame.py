@@ -1,4 +1,7 @@
 from sys import exit
+from firstscene import firstscene
+from secondscene import secondscene
+from finalscene import finalscene
 
 
 class gamemap(object):
@@ -35,35 +38,7 @@ class engine(object):
     def exit(self):
         print "exiting"
         exit(0)
-        
-class firstscene(object):
 
-    def start(self):
-        print "this is the start of scene#1"
-        print "no matter what you say, you are going to scene 2"
-        answer = raw_input(">")
-        return "second"
-
-class secondscene(object):
-    def start(self):
-        print "say a number bigger than 5"
-        try:
-            answer = int(raw_input("> "))
-        except ValueError:
-            print "we teleport you back to the first scene"
-            return "first"
-        if answer > 5:
-            print "good boy, you can go to the final scene"
-            return "final"
-        else:
-            return "first"
-class finalscene(object):
-    def start(self):
-        print "final scene"
-        print """if you arrived here it means that the raptile god has been in
-        a good mood :)) now go get that Holy Grail
-        """
-        quit()
        
 myMap = gamemap()
 myEngine = engine(myMap)
